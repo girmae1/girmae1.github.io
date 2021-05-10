@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            // Learned from W3Schools from their jQuery tutorials. 
+            
+            $(document).ready(function(){
+              $("#flip").click(function(){
+                $("#Welcomepanel").slideDown("slow");
+              });
+            });
+        </script>
+        <style> 
+            body { 
+                font-family: georgia, times, serif;
+                padding: 20px;
+                background-color:#fdf5fd;
+            }
+            #container {
+                width: 85%;
+                margin: 0 auto;
+                border: 2px solid #ffffff;
+                overflow: auto;
+                padding: 100px;
+                background-color: #f1eefa;
+            } 
+            h1, h2, h3 {
+            font-weight: normal;
+                color: #390139;
+                margin: 0px;    
+            }
+            h1 {
+                font-family: georgia, serif;  
+                font-size: 250%;
+                text-shadow: 2px 2px 3px #ffb9f7;
+            }
+            .intro {
+                font-family: georgia, times, serif;
+                line-height: 150%;
+                font-size: 110%;
+            }
+            header {
+                width: 100%;
+                height: 75px;
+                text-align: center;
+                background-color: #390139;
+                padding-top: 70px;
+                position: fixed;
+	            margin: -80px auto 0;
+	            text-align: center;
+	            z-index: 100;
+	            box-shadow: 2px 2px 4px #26646c;
+}
+                
+            header ul {
+                list-style-type: none;
+                }
+            header li {
+                    display: inline;
+                    padding-left: 150px;
+            
+                }
+            header li:first-child {
+                padding-left: 0px;
+            }
+            footer {
+                width:100%;
+                height: 30px;
+                clear: both;
+                background-color: #390139;
+                text-align: center;
+                padding-top: 10px;
+                padding-right: 60px;
+                color: #f7daf7;
+            }
+            nav {
+                border-bottom: 0px solid #000000;
+            }
+              a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:link{
+                color: #F2F2F2;
+                background-color: #390139;
+            }
+            a:visited{
+                color: #fafafa;
+                background-color: #390139;
+            }
+            a:hover{
+                color: #b886ba;
+                background-color: #F2F2F2;
+                text-decoration: underline;
+            }
+            a:active{
+                color: #a942ad;
+                background-color: #fff0f5;
+            }
+            
+            .email{
+                padding: 20px;
+                border: 2px solid #390139;
+                background-color: #c8beeb;
+                width: 1220px;
+                text-align: center;
+                float: center;
+            }
+            header, footer p {
+                color: #F2F2F2;
+            }
+            img { 
+            float: right;
+            height: 270px;
+            width: 207px;
+            margin-left: 20px;
+            }
+            /* Learned from W3Schools jQuery Sliding Tutorials*/
+            #Welcomepanel, #flip {
+              padding: 5px;
+              text-align: center;
+              background-color: #c8beeb;
+              border: solid 1px #390139;
+            }
+
+            #Welcomepanel {
+              padding: 20px;
+              display: none;
+            }
+        </style>
+				
+	</head>
+	<body>
+        <header> 
+            <nav>
+                <ul>
+                    <li> Home</li>
+                    <li> <a href = "Portfolio_4.12.html">Portfolio</a></li>
+                    <li> <a href = "Friendships_4.5.html">Friendships</a></li>
+                    <li> <a href = "K-dramas_4.5.html">K-dramas</a></li>
+                    <li> <a href = "Resources_4.5.html">Resources</a> </li>
+                </ul>
+            </nav>    
+        </header>
+        <div id= "container">    
+        <h1>Hello!</h1>
+            
+        <div id="flip">Click to see message</div>
+        <div id="Welcomepanel"><h2>Welcome to My Website!</h2></div>
+            
+        <p class="intro"><img src="Side_Smile.jpg" alt="Credit: Lena Phung" title="Image of Ellena by Lena Phung">
+              My name is Ellena. I am working on my Senior Capstone Project and I thought a website would be the perfect platform to share my work. My goal for this capstone project was to have it be reflective of the many disciplines that interest me. I've always wanted to find creative ways to tell stories and learn new tools. So I took on a capstone project that would allow me to share my experiences as an international student and teach me how to visualize data from my life. There are three main areas that I wanted to explore with this project:
+            </p>   
+		<ol class="intro"> 
+			<li>Communication</li>
+			<li>Programming</li>
+			<li>Digital Art and Visual works</li>
+		</ol>
+		
+            <p class="intro">I picked these disciplines because they focus on utilizing storytelling techniques to allow an audience to interact with a creator's work in multiple ways. </p>
+            
+		<p class="email"> If you'd like to get in touch, here's my email: 
+		<a href= "mailto:girmae1@lasalle.edu">girmae1@lasalle.edu</a></p>
+    
+        <p class="intro">
+        If you have any suggestions or resources I could look at, you can let me know by filling <a href = "Form.html">the form</a> on this page. Here is <a href = "FlexboxForm.html">the flexbox</a> version of the form. A flexbox is another way of structuring a page or elements in a page. It can be useful for elements like the navigation bar or a form. 
+        </p>
+
+        </div>
+        <footer> 
+        &copy; 2021 - 2021 Copyright Ellena Girma - All rights reserved
+        </footer>
+	</body>
+</html>
