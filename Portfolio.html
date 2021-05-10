@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+<title>Portfolio</title>
+        <style>
+            *{
+                box-sizing: border-box;
+           }
+            body {
+                font-family: georgia, times, serif;
+                padding: 20px;
+                background-color:#fdf5fd;
+            }
+            #container {
+                width: 90%;
+                margin: 0 auto;
+                border: 2px solid #ffffff;
+                overflow: auto;
+                padding: 100px;
+                background-color: #f1eefa;
+            }
+            h1, h2, h3 {
+            font-weight: normal;
+                color: #49326b;
+                margin: 0px;   
+            }
+            h1 {
+                font-family: georgia, serif;
+                font-size: 250%;
+                text-shadow: 2px 2px 3px #ffb9f7;
+            }
+            header {
+                width: 100%;
+                height: 75px;
+                text-align: center;
+                background-color: #390139;
+                padding-top: 70px;
+                position: fixed;
+           margin: -80px auto 0;
+           text-align: center;
+           z-index: 100;
+           box-shadow: 2px 2px 4px #26646c;
+            }
+               
+            header ul {
+                list-style-type: none;
+                }
+            header li {
+                    display: inline;
+                    padding-left: 150px;
+           
+                }
+            header li:first-child {
+                padding-left: 0px;
+            }
+            footer {
+                width:100%;
+                height: 30px;
+                clear: both;
+                background-color: #390139;
+                text-align: center;
+                padding-top: 10px;
+                padding-right: 60px;
+                color: #f7daf7;
+            }
+            nav {
+                border-bottom: 0px solid #000000;
+            }
+              a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:link{
+                color: #F2F2F2;
+                background-color: #390139;
+            }
+            a:visited{
+                color: #fafafa;
+                background-color: #390139;
+            }
+            a:hover{
+                color: #b886ba;
+                background-color: #F2F2F2;
+                text-decoration: underline;
+            }
+            a:active{
+                color: #a942ad;
+                background-color: #fff0f5;
+            }
+            header, footer p {
+            color: #F2F2F2;
+            }
+        .portfolio {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 300px 300px 300px 300px;
+            background-color: #f1eefa;
+            color: #f1eefa;
+           
+          }
+
+          .box {
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 112%;
+
+          }
+
+          .a {
+            grid-column: 1 / 2;
+            grid-row: 1;
+          }
+          .b {
+            grid-column: 2/3 ;
+            grid-row: 1 ;
+          }
+         .c {
+            grid-column: 3/4;
+            grid-row: 1 ;
+          }
+         .d {
+            grid-column: 4/5;
+            grid-row: 1 ;
+          }
+          .e {
+            grid-column: 1/5;
+            grid-row: 2;
+          }
+        .thumbnail:hover {
+            position:relative;
+            top:-25px;
+            left:-110px;
+            width:550px;
+            height:auto;
+            display:block;
+            z-index:999;
+        }
+        </style>
+</head>
+<body >
+         <header>
+            <nav>
+                <ul>
+                    <li> <a href = "Home_4.5.html">Home</a> </li>
+                    <li> Portfolio </li>
+                    <li> <a href = "Friendships_4.5.html">Friendships</a></li>
+                    <li> <a href = "K-dramas_4.5.html">K-dramas</a></li>
+                    <li> <a href = "Resources_4.5.html">Resources</a> </li>
+                </ul>
+            </nav>    
+        </header>
+         <div id="container">
+<div class="portfolio">
+<div class="box a">
+      <img src="FriendshipFlowers2.jpeg" class="thumbnail" height="250" width="250" />
+      <a href="Friendships_4.5.html"><h3>Hand drawn Friendship Flowers</h3></a>
+     
+        <p>My Friendship Flowers are adapted from <a href="http://www.dear-data.com/week-25-a-week-of-friends" target="_blank">Giorgia Lupi's Week of Friends. </a> This visualization shows my close friends and my relationship with them. For example, I show the topics we talk about, how long I've known them for and how often we talk.
+        </p>
+</div>
+
+<div class="box b">
+ <img src="ClearE2E.jpg" alt="Friendship Networks Using Graph Theory" class="thumbnail" height="250" width="260" />
+     <a href="Friendships_4.5.html"><h3>Friendship Networks Using Graph Theory</h3></a>
+       
+        <p>I have 2 friendship networks. My first network shows my relationship to everyone in my friend group and their relationships to each other as well. My second network is of k-dramas I have watched and my friends who watch k-dramas. By doing this, I can check if any of the k-dramas I've watched are an indicator of a relationship. </p>
+       
+</div>
+
+<div class="box c">
+<img src="Kdrama%20handdrawn%20flowers.jpg"  alt="Handdrawn K-drama Flowers" class="thumbnail" height="200" width="260" />
+      <a href="K-dramas_4.5.html#K-Drama Film Flowers"><h3>An Ode to K-drama Buddies: Hand drawn K-drama Flowers</h3></a>
+     
+        <p>My hand drawn K-drama flowers are adapted from Giorgia Lupi and Stefanie Posavec's Ode to Friendship from their book <a href="http://giorgialupi.com/observe-collect-draw" target="_blank"> Observe, Collect, Draw!</a> Each k-drama I've watched is one flower, and I cover attributes such my enjoyment of the k-drama, the friends I've watched it with. </p>
+   
+ </div>
+<div class="box d">
+<img src="FilmFlowers2Ellena.PNG" alt="K-Drama Film FLowers" class="thumbnail" height="240" width="260" />
+        <a href="K-dramas_4.5.html#K-Drama Film Flowers"><h3>Korean Drama Flowers</h3></a>
+      <p> This is adpated from Shirley Wu's <a href="https://shirleywu.studio/filmflowers/" target="_blank"> Film Flowers</a>. I visualize the k-dramas I've watched as flowers. I use data from imdb to code for the flower's petal size, number of petals and color of the flower. </p>
+</div>
+
+<div class="box e">
+<h3>Additional Work I Want To Do</h3>
+   
+  <p>There is still more I want to share about my story. These are not improvements to the existing work, but rather additional projects I want to take on. Topics/themes include:</p>
+     
+    <ul>
+        <li>Travel</li>
+        <li>Food</li>
+        <li>Music</li>
+        <li>Education</li>
+        <li>Culture and Customs/Traditions</li>
+    </ul>
+</div>
+</div>
+
+        </div>
+         <footer>
+        &copy; 2021 - 2021 Copyright Ellena Girma - All rights reserved
+        </footer>
+</body>
+</html>
